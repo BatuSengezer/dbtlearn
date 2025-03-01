@@ -1,1 +1,9 @@
-target/ dbt_packages/ logs/ .user.yml
+target/
+dbt_packages/
+logs/
+.user.yml
+
+# Additional files to ignore
+~/.dbt/profiles.yml
+/home/batu_ubuntu/.dbt/user.yml
+
