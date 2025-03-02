@@ -1,3 +1,9 @@
+{{
+  config(
+    materialized = 'view'
+    )
+}}
+
 WITH src_listings AS(
 SELECT *
 FROM {{ref('src_listings')}} --jinja syntax, ref fonction calls the listing table 
@@ -14,4 +20,3 @@ SELECT
   updated_at
 FROM
   src_listings
-    
